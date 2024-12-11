@@ -1,0 +1,188 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #002930;
+    color: #37476A;
+}
+
+header {
+    background-color: #000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    height: 150px;
+    
+}
+
+header img {
+    width: 150px;
+    height: 140px;
+    
+
+}
+
+header img {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #002930;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    max-height: 700px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+section {
+    background-color: #002930;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+section h2 {
+   
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+
+#noticias .section-item {
+    background-color: #1D6976;
+}
+
+
+
+.section-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-item {
+    background-color: #37476A;
+    color: #FFFFFF;
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+span {
+    font-size: 22px;
+    color: rgb(115, 188, 227);
+    font-weight: bold;
+}
+
+.section-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+#mentores .section-item img {
+    object-fit: cover;
+    object-position: center top;
+    height: 300px;
+   
+}
+
+#alunos .section-item img {
+    object-fit: cover;
+    object-position: center top;
+    height: 300px;
+   
+}
+
+.section-item p {
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+    }
+
+    .section-item {
+        width: 100%;
+    }
+}
